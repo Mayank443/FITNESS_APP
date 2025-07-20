@@ -127,7 +127,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
         ),
         Positioned(
           bottom: 0,
-          child: Container(
+          child: SizedBox(
             height: size.height * 0.4,
             width: size.width,
             child: Center(

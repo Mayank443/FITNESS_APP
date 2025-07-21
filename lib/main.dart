@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 import 'screens/GenderScreen/gender_screen.dart';
 import 'screens/GoalScreen/goal_screen.dart';
-import 'screens/HieghtScreen/height_screen.dart';
+import 'screens/HeightScreen/height_screen.dart';
+import 'screens/LevelScreen/level_screen.dart';
 import 'screens/OnboardingScreen/onboarding_screen.dart';
 import 'screens/WeightScreen/weight_screen.dart';
 
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         '/weight': (context) => WeightPage(),
         '/height': (context) => HeightPage(),
         '/goal': (context) => GoalPage(),
+        '/activity': (context) => LevelScreen(),
         
       },
       home: OnBoardingScreen(),

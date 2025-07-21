@@ -44,13 +44,17 @@ class _AgePageState extends State<AgePage> {
             ),
             DetailPageButton(
               text: 'Next',
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, '/weight');
+              },
               showBackButton: true,
-              onBackTap: () {},
+              onBackTap: () {
+                Navigator.pop(context);
+              },
             ),
           ],
         ),
       ),
-    ); // ChangeNotifierProvider is a class that provides an instance of T to its descendants.
+    );
   }
 }

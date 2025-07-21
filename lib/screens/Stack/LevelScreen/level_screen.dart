@@ -1,27 +1,25 @@
 import 'package:flutter/material.dart';
-import '../../models/detail_page_button.dart';
-import '../../models/detail_page_title.dart';
-import '../../models/list_wheel_view_scroller.dart';
 
+import '../../../models/detail_page_button.dart';
+import '../../../models/detail_page_title.dart';
+import '../../../models/list_wheel_view_scroller.dart';
 
-class GoalPage extends StatefulWidget {
-  const GoalPage({super.key});
+class LevelScreen extends StatefulWidget {
+  const LevelScreen({super.key});
 
   @override
-  State<GoalPage> createState() => _GoalPageState();
+  State<LevelScreen> createState() => _LevelScreenState();
 }
 
-class _GoalPageState extends State<GoalPage> {
+class _LevelScreenState extends State<LevelScreen> {
   @override
   Widget build(BuildContext context) {
     List<String> items = [
-      'Lose Weight',
-      'Gain Weight',
-      'Stay Fit',
-      'Build Muscle'
-      'Improve Endurance',
-      'Stay Healthy',
-
+      'Rookie',
+      'Beginner',
+      'Intermediate',
+      'Advanced',
+      'Pro',
     ];
 
     var size = MediaQuery.of(context).size;
@@ -40,21 +38,25 @@ class _GoalPageState extends State<GoalPage> {
           children: [
             const DetailPageTitle(
                 text: 'This helps us to create a personlized plan for you',
-                title: "What is your Goal?",
+                title: "What is your Activity Level?",
                 color: Colors.white),
             SizedBox(
               height: size.height * 0.055,
             ),
             SizedBox(
               height: size.height * 0.5,
-              child: ListwheelScrollView(items: items,),
+              child: ListwheelScrollView(
+                items: items,
+              ),
             ),
-            DetailPageButton(text: 'Next', onTap: () {
-              Navigator.pushNamed(context, '/activity');
-            }, showBackButton: true,
-            onBackTap: (){
-              Navigator.pop(context);
-            },),
+            DetailPageButton(
+              text: 'Next',
+              onTap: () {},
+              showBackButton: true,
+              onBackTap: () {
+                Navigator.pop(context);
+              },
+            ),
           ],
         ),
       ),

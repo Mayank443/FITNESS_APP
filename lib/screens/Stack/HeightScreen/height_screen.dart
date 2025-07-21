@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../models/detail_page_button.dart';
-import '../../models/detail_page_title.dart';
-import '../../models/list_wheel_view_scroller.dart';
+import '../../../models/detail_page_button.dart';
+import '../../../models/detail_page_title.dart';
+import '../../../models/list_wheel_view_scroller.dart';
 
 class HeightPage extends StatefulWidget {
   const HeightPage({super.key});

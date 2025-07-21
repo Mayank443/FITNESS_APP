@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../constants/colors.dart';
-import '../../models/detail_page_button.dart';
-import '../../models/detail_page_title.dart';
+import '../../../constants/colors.dart';
+import '../../../models/detail_page_button.dart';
+import '../../../models/detail_page_title.dart';
 
 class GenderPage extends StatefulWidget {
 

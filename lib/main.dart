@@ -1,13 +1,13 @@
-import 'package:fitnesss_app/screens/Login_Signup/forgot_passward.dart';
-import 'package:fitnesss_app/screens/Stack/AgeScreen/age_screen.dart';
+import 'package:fitnesss_app/screens/Auth/forgot_passward.dart';
+import 'package:fitnesss_app/screens/UserData/AgeScreen/age_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'screens/Stack/GenderScreen/gender_screen.dart';
-import 'screens/Stack/GoalScreen/goal_screen.dart';
-import 'screens/Stack/HeightScreen/height_screen.dart';
-import 'screens/Stack/LevelScreen/level_screen.dart';
-import 'screens/Stack/OnboardingScreen/onboarding_screen.dart';
-import 'screens/Stack/WeightScreen/weight_screen.dart';
+import 'screens/UserData/GenderScreen/gender_screen.dart';
+import 'screens/UserData/GoalScreen/goal_screen.dart';
+import 'screens/UserData/HeightScreen/height_screen.dart';
+import 'screens/UserData/LevelScreen/level_screen.dart';
+import 'screens/OnboardingScreen/onboarding_screen.dart';
+import 'screens/UserData/WeightScreen/weight_screen.dart';
 
 void main() {
   runApp(MyApp());

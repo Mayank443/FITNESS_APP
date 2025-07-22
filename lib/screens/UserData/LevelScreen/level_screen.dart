@@ -41,7 +41,7 @@ class _LevelScreenState extends State<LevelScreen> {
                 title: "What is your Activity Level?",
                 color: Colors.white),
             SizedBox(
-              height: size.height * 0.055,
+              height: size.height * 0.05,
             ),
             SizedBox(
               height: size.height * 0.5,
@@ -51,7 +51,8 @@ class _LevelScreenState extends State<LevelScreen> {
             ),
             DetailPageButton(
               text: 'Next',
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, '/login');},
               showBackButton: true,
               onBackTap: () {
                 Navigator.pop(context);

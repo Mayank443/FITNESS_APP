@@ -1,4 +1,5 @@
 import 'package:fitnesss_app/screens/Auth/forgot_passward.dart';
+import 'package:fitnesss_app/screens/Auth/login_signup.dart';
 import 'package:fitnesss_app/screens/UserData/AgeScreen/age_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -29,9 +30,13 @@ class MyApp extends StatelessWidget {
         '/height': (context) => HeightPage(),
         '/goal': (context) => GoalPage(),
         '/activity': (context) => LevelScreen(),
+        '/login': (context) => SignUp(),
+        '/forgotPassword': (context) => ForgotPassward(),
         
       },
-      home: ForgotPassward(),
+      home: OnBoardingScreen(
+
+      ),
     );
   }
 }
